@@ -161,7 +161,7 @@ function App() {
           </div>
           <div className="subfooter">
             <span className="mainstring">Режим работы</span>
-            <span>С 10:00 lj 21:00 (Пн-Пт)</span>
+            <span>С 10:00 до 21:00 (Пн-Пт)</span>
             <span>С 11:00 до 20:00 (Сб-Вс)</span>
             <span>Новоостровский проспект, дом 36 лит. С</span>
           </div>
