@@ -6,14 +6,14 @@ import { servicescost } from '../../data/services-cost';
 import ServiceCost from '../../components/servicecost-item/service-cost';
 const ServicesCost = () => {
   const [priceList, setPriceList] = useState([]);
-  useEffect(() => {
-    fetch('http://localhost:8000/services/get-list')
-      .then((res) => res.json())
-      .then((data) => setPriceList(data));
-  }, []);
-  useEffect(() => {
-    console.log(priceList);
-  }, [priceList]);
+  // useEffect(() => {
+  //   fetch('http://localhost:8000/services/get-list')
+  //     .then((res) => res.json())
+  //     .then((data) => setPriceList(data));
+  // }, []);
+  // useEffect(() => {
+  //   console.log(priceList);
+  // }, [priceList]);
   function chunkArray(array, chunkSize) {
     const chunks = [];
     for (let i = 0; i < array.length; i += chunkSize) {
@@ -22,7 +22,7 @@ const ServicesCost = () => {
     return chunks;
   }
 
-  const result = chunkArray(priceList, 4);
+  const result = chunkArray(servicescost, 4);
   let x = result.length - 1;
 
   const servicesJSX = [];
