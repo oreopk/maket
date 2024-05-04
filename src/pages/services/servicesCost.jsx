@@ -1,11 +1,11 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
+//import { useEffect, useState } from 'react';
 import servicepng from '../../assets/service.png';
 import '../services/servicesCost.css';
 import { servicescost } from '../../data/services-cost';
 import ServiceCost from '../../components/servicecost-item/service-cost';
 const ServicesCost = () => {
-  const [priceList, setPriceList] = useState([]);
+  // const [priceList, setPriceList] = useState([]);
   // useEffect(() => {
   //   fetch('http://localhost:8000/services/get-list')
   //     .then((res) => res.json())

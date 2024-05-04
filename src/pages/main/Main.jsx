@@ -1,7 +1,7 @@
 import './Main.css';
 
 import cav from '../../assets/cav.png';
-import React, { useState } from 'react';
+import React from 'react';
 import kevin from '../../assets/kevin.png';
 import oribe from '../../assets/oribe.png';
 import alterna from '../../assets/alterna.png';
