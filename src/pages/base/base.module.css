@@ -1,7 +1,15 @@
 .base {
   background-color: rgb(17, 17, 17);
   display: flex;
-  justify-content: space-around;
+
   align-items: center;
   flex-direction: column;
+}
+.menuflex {
+  width: 3000px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
 }

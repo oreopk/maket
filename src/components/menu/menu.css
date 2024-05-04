@@ -1,0 +1,73 @@
+.buttonMENU {
+  top: 25px;
+  left: 50px;
+  background: none;
+  position: absolute;
+}
+
+.menuopen {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+
+  height: 1338px;
+  background-color: #f0f0f0;
+  background: rgb(17, 17, 17);
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0);
+  order: 1;
+  display: flex;
+
+  flex-direction: column;
+  text-align: center;
+  padding-top: 401px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.menuopen.closed {
+  transform: translateX(100%);
+  transition: all 5s ease;
+}
+.menuLorem {
+  width: 315px;
+  color: rgb(255, 255, 255);
+  font-family: Cormorant Garamond;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: start;
+  white-space: wrap;
+  margin-bottom: 20px;
+}
+.menuSpan {
+  color: rgb(255, 255, 255);
+  font-family: Cormorant Garamond;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: start;
+}
+.submenu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.menuString {
+  text-align: start;
+  color: rgb(255, 255, 255);
+  font-family: Garamond;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  padding-top: 60px;
+}
+
+.imgbutton {
+  width: 32px;
+  height: 32px;
+}

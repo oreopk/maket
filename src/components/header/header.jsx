@@ -1,11 +1,12 @@
-import React from 'react';
 import omega from '../../assets/omega.png';
 import instagram from '../../assets/instagram.png';
 import styles from './header.module.css';
+
 import { NavLink } from 'react-router-dom';
 import { Paths } from '../../routes.js';
 import line from '../../assets/Line.png';
-const Header = () => {
+
+const Header = ({ toggleMenu }) => {
   return (
     <nav className={styles.navbar}>
       <NavLink
@@ -38,7 +39,7 @@ const Header = () => {
         className={({ isActive }) =>
           [styles.link, isActive && styles.active].join(' ')
         }
-        to={Paths.BLANK}
+        to={Paths.SERVICECOST}
       >
         Косметика
       </NavLink>
@@ -47,7 +48,7 @@ const Header = () => {
         className={({ isActive }) =>
           [styles.link, isActive && styles.active].join(' ')
         }
-        to={Paths.BLANK}
+        to={'Paths.BLANK'}
       >
         <img className={styles.imgstyle} src={omega} alt="Omega" />
       </NavLink>
@@ -74,11 +75,11 @@ const Header = () => {
         className={({ isActive }) =>
           [styles.link, isActive && styles.active].join(' ')
         }
-        to={Paths.BLANK}
+        to={Paths.CONTACTS}
       >
         Контакты
       </NavLink>
-      <button className={styles.but}>
+      <button className={styles.but} onClick={toggleMenu}>
         <img className={styles.line} src={line} alt="line" />
         <img
           className={styles.line + ' ' + styles.line2}

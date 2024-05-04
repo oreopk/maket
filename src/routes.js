@@ -1,5 +1,7 @@
 export const Paths = {
   ROOT: '/',
   MASTERS: 'masters',
-  BLANK: '/EMPTY',
+  SERVICECOST: 'servicescost',
+  CONTACTS: 'contacts',
+  BLANK: '*',
 };

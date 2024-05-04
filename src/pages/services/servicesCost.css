@@ -1,0 +1,33 @@
+.OurServices {
+  color: rgb(255, 255, 255);
+  font-family: Garamond;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 160px;
+}
+.ServicesList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 500px;
+
+  row-gap: 40px;
+}
+
+.servicespart {
+  display: flex;
+  align-items: center;
+  gap: 134px;
+  justify-content: flex-start;
+  margin-top: 80px;
+}
+.servicepng {
+  width: 636px;
+  height: 536px;
+}
+.order {
+  order: 1;
+}

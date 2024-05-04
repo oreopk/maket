@@ -1,0 +1,42 @@
+.cardMenu {
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+}
+.mastercard {
+  position: relative;
+  left: -20px;
+  top: 20px;
+  width: 400px;
+  height: 477px;
+}
+.bordMaster {
+  border: 1px solid rgb(205, 170, 125);
+  width: 396px;
+  height: 477px;
+}
+.name {
+  color: rgb(255, 255, 255);
+  font-family: Cormorant Garamond;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-top: 50px;
+  margin-right: auto;
+  margin-left: -20px;
+}
+.work {
+  color: rgb(255, 255, 255);
+  font-family: Cormorant Garamond;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: -20px;
+}

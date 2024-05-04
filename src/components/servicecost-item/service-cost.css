@@ -1,0 +1,30 @@
+.service-text {
+  color: rgb(255, 255, 255);
+  font-family: Cormorant Garamond;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+.servicediv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.154);
+}
+.servicemain {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.service-text_low {
+  color: rgb(255, 255, 255);
+  font-family: Cormorant Garamond;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}

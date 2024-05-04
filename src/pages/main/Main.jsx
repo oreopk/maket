@@ -1,12 +1,7 @@
 import './Main.css';
 
 import cav from '../../assets/cav.png';
-import one from '../../assets/1.png';
-import two from '../../assets/2.png';
-import three from '../../assets/3.png';
-import four from '../../assets/4.png';
-import five from '../../assets/5.png';
-import six from '../../assets/6.png';
+import React, { useState } from 'react';
 import kevin from '../../assets/kevin.png';
 import oribe from '../../assets/oribe.png';
 import alterna from '../../assets/alterna.png';
@@ -20,8 +15,9 @@ import works6 from '../../assets/work-6.png';
 import works7 from '../../assets/work-7.png';
 import works8 from '../../assets/work-8.png';
 import works9 from '../../assets/work-9.png';
-import React from 'react';
 
+import { services } from '../../data/services.js';
+import Service from '../../components/service-item/service.jsx';
 function Main() {
   return (
     <>
@@ -48,50 +44,9 @@ function Main() {
       </p>
 
       <div className="cardsMenu">
-        <div className="cardspart">
-          <div className="cardMenu">
-            <div className="bordMenu">
-              <img className="imgcard" src={one} alt="card" />
-            </div>
-            <span>Парихмахерские услуги</span>
-          </div>
-
-          <div className="cardMenu">
-            <div className="bordMenu">
-              <img className="imgcard" src={two} alt="card" />
-            </div>
-            <span>Маникюр</span>
-          </div>
-
-          <div className="cardMenu">
-            <div className="bordMenu">
-              <img className="imgcard" src={three} alt="card" />
-            </div>
-            <span>Педикюр</span>
-          </div>
-        </div>
-        <div className="cardspart">
-          <div className="cardMenu">
-            <div className="bordMenu">
-              <img className="imgcard" src={four} alt="card" />
-            </div>
-            <span>Космотология</span>
-          </div>
-
-          <div className="cardMenu">
-            <div className="bordMenu">
-              <img className="imgcard" src={five} alt="card" />
-            </div>
-            <span>Эстетист по делу</span>
-          </div>
-
-          <div className="cardMenu">
-            <div className="bordMenu">
-              <img className="imgcard" src={six} alt="card" />
-            </div>
-            <span>Визаж</span>
-          </div>
-        </div>
+        {services.map((service) => (
+          <Service key={service.id} name={service.name} img={service.img} />
+        ))}
       </div>
       <div className="icons">
         <img className="icon" src={kevin} alt="card" />
