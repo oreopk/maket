@@ -6,8 +6,6 @@
   flex-direction: column;
 }
 .menuflex {
-  width: 3000px;
-
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
